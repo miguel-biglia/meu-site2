@@ -17,26 +17,25 @@ body{
     color: white;
 }
 
+header{
+    background-color: var(--cabeçalho);
+    margin: auto;
+    padding: auto;
+}
+
 header h1{
-    text-align: center;
-    
+    text-align: justify;
 }
 
 nav{
-    text-align: center;
+    text-align: justify;
 }
 
 header h2{
     text-align: center;
 }
 
-
-header #logo{
-    height: 50px;
-    width: 50px;
-    border-radius: 6px;
-}
-
-header{
-    background-color: var(--cabeçalho);
+img{
+    width: 200px;
+    height: 200px;
 }
