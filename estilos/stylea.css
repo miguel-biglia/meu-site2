@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --cabeçalho: #0F172A;
+    --fundo: #121212;
+    --cards: #1E1E1E;
+    --botões: #3B82F6;
+    --texto: #F8FAFC;
+}
+
+body{
+    background-color: var(--fundos);
+    color: white;
+}
+
+header h1{
+    text-align: center;
+    
+}
+
+nav{
+    text-align: center;
+}
+
+header h2{
+    text-align: center;
+}
+
+
+header #logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 6px;
+}
+
+header{
+    background-color: var(--cabeçalho);
+}
