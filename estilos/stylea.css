@@ -1,36 +1,38 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-}
-
-:root{
-    --cabeçalho: #0F172A;
-    --fundo: #121212;
-    --cards: #1E1E1E;
-    --borda-card: #334155;
-    --botões: #3B82F6;
-    --botoes-hover: #60A5FA;
-    --texto: #F8FAFC;
-    --footer: #CBD5E1;
-}
-
-body{
-    background-color: var(--fundo);
-    color: var(--texto);
-}
-
-*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+}
+
+:root{
+    --cabecalho: #0F172A;
+    --fundo: #121212;
+    --cards: #1E1E1E;
+    --borda-card: #334155;
+    --botoes: #3B82F6;
+    --botoes-hover: #60A5FA;
+    --texto: #F8FAFC;
+    --texto-secundario: #CBD5E1;
 }
 
 body{
     background: var(--fundo);
-    color: var(--texto);
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 header{
@@ -38,6 +40,9 @@ header{
     text-align: center;
     padding: 35px 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,.4);
+
+    opacity: 0;
+    animation: aparecer 3s forwards;
 }
 
 header h1{
@@ -62,7 +67,6 @@ nav{
 }
 
 nav a{
-    color: var(--texto);
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
@@ -75,7 +79,89 @@ nav a:hover{
     background: var(--botoes-hover);
 }
 
-img{
+/* GRID DOS CARDS */
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* CARDS */
+
+main div{
+    background: var(--cards);
+    width: 300px;
+    height: 340px;
+
+    margin: auto;
+    padding: 15px;
+
+    border-radius: 10px;
+    border: 1px solid var(--borda-card);
+
+    text-align: center;
+
+    opacity: 0;
+    animation: aparecer .8s forwards;
+
+    transition: .3s;
+}
+
+main div:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(59,130,246,.4);
+}
+
+main img{
     width: 200px;
     height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+main button{
+    background-color: var(--botoes);
+    color: var(--texto-secundario);
+    border-radius: 6px;
+    height: 30px;
+    width: 83px;
+    margin: 4px;
+}
+
+main button:hover{
+    background-color: var(--botoes-hover);
+    transition-duration: 1s;
+}
+
+/* CADA CARD APARECE EM UM MOMENTO */
+
+#tecnologia{
+    animation-delay: .5s;
+}
+
+#terra{
+    animation-delay: 1.2s;
+}
+
+#paises{
+    animation-delay: 1.9s;
+}
+
+#espaco{
+    animation-delay: 2.6s;
+}
+
+footer{
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
