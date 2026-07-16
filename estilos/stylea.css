@@ -8,8 +8,11 @@
     --cabeçalho: #0F172A;
     --fundo: #121212;
     --cards: #1E1E1E;
+    --borda-card: #334155;
     --botões: #3B82F6;
+    --botoes-hover: #60A5FA;
     --texto: #F8FAFC;
+    --footer: #CBD5E1;
 }
 
 body{
