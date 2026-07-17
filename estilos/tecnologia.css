@@ -19,3 +19,7 @@
     --texto: #F8FAFC;
     --texto-secundario: #B8C7D9;
 }
+
+body{
+    background: var(--fundo);
+}
