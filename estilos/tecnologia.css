@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+}
+
+:root{
+    --cabecalho: #081C2E;
+    --fundo: #0A1018;
+    --banner: #12263A;
+    --cards: #182635;
+    --borda-card: #2D4F73;
+
+    --botoes: #00B4D8;
+    --botoes-hover: #48CAE4;
+
+    --texto: #F8FAFC;
+    --texto-secundario: #B8C7D9;
+}

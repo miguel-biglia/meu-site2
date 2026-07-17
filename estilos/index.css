@@ -11,6 +11,7 @@
     --fundo: #121212;
     --cards: #1E1E1E;
     --borda-card: #334155;
+    --card-hover: rgba(59,130,246,.4);
     --botoes: #3B82F6;
     --botoes-hover: #60A5FA;
     --texto: #F8FAFC;
@@ -119,7 +120,7 @@ main div{
 
 main div:hover{
     transform: translateY(-8px);
-    box-shadow: 0 0 20px rgba(59,130,246,.4);
+    box-shadow: 0 0 20px var(--card-hover);
 }
 
 main div h1{
@@ -159,7 +160,7 @@ main button:hover{
 
 footer{
     text-align: center;
-    padding: 30px;
+    padding: 10px;
 }
 
 footer a{
