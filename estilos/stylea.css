@@ -21,7 +21,9 @@ body{
     background: var(--fundo);
 }
 
-/* ANIMAÇÃO */
+/* =======================
+   ANIMAÇÃO
+======================= */
 
 @keyframes aparecer{
     from{
@@ -34,6 +36,10 @@ body{
         transform: translateY(0);
     }
 }
+
+/* =======================
+   CABEÇALHO
+======================= */
 
 header{
     background: var(--cabecalho);
@@ -79,7 +85,9 @@ nav a:hover{
     background: var(--botoes-hover);
 }
 
-/* GRID DOS CARDS */
+/* =======================
+   CARDS
+======================= */
 
 main{
     display: grid;
@@ -90,21 +98,11 @@ main{
     margin: 40px auto;
 }
 
-footer{
-    text-align: center;
-    text-decoration: none
-}
-
-footer a:hover{
-    text-decoration: underline;
-}
-
-/* CARDS */
-
 main div{
     background: var(--cards);
-    width: 300px;
-    height: 340px;
+    width: 100%;
+    max-width: 300px;
+    min-height: 340px;
 
     margin: auto;
     padding: 15px;
@@ -116,7 +114,6 @@ main div{
 
     opacity: 0;
     animation: aparecer .8s forwards;
-
     transition: .3s;
 }
 
@@ -125,40 +122,150 @@ main div:hover{
     box-shadow: 0 0 20px rgba(59,130,246,.4);
 }
 
+main div h1{
+    margin-bottom: 10px;
+}
+
 main img{
-    width: 200px;
+    width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
+
+main p{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
 main button{
-    background-color: var(--botoes);
-    color: var(--texto-secundario);
+    background: var(--botoes);
+    color: var(--texto);
+    border: none;
     border-radius: 6px;
-    height: 30px;
-    width: 83px;
-    margin: 4px;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    transition: .3s;
 }
 
 main button:hover{
-    background-color: var(--botoes-hover);
-    transition-duration: 1s;
+    background: var(--botoes-hover);
 }
 
-/* CADA CARD APARECE EM UM MOMENTO */
+/* =======================
+   RODAPÉ
+======================= */
+
+footer{
+    text-align: center;
+    padding: 30px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* =======================
+   ANIMAÇÕES DOS CARDS
+======================= */
 
 #tecnologia{
-    animation-delay: .5s;
+    animation-delay: .8s;
 }
 
 #terra{
-    animation-delay: 1.2s;
+    animation-delay: 1.5s;
 }
 
 #paises{
-    animation-delay: 1.9s;
+    animation-delay: 2.2s;
 }
 
 #espaco{
-    animation-delay: 2.6s;
+    animation-delay: 2.9s;
+}
+
+/* =======================
+   TABLETS
+======================= */
+
+@media (max-width: 900px){
+
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    main div{
+        max-width: 400px;
+    }
+
+}
+
+/* =======================
+   CELULARES
+======================= */
+
+@media (max-width: 600px){
+
+    header{
+        padding: 25px 15px;
+    }
+
+    header h1{
+        font-size: 2.2rem;
+    }
+
+    header h2{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    nav a{
+        width: 150px;
+        text-align: center;
+    }
+
+    main{
+        width: 95%;
+        gap: 20px;
+    }
+
+    main div{
+        max-width: 100%;
+    }
+
+    main img{
+        height: 180px;
+    }
+
+    main h1{
+        font-size: 1.5rem;
+    }
+
+    main p{
+        font-size: .95rem;
+    }
+
+    main button{
+        width: 120px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    footer{
+        padding: 20px;
+        font-size: .9rem;
+    }
+
 }
