@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+}
+
+:root{
+    --cabecalho: #0B3D2E;          
+    --fundo: #0F1F1A;              
+    --cards: #1B3A34;             
+    --borda-card: #2E6B5A;         
+
+    --botoes: #38B000;             
+    --botoes-hover: #70E000;       
+
+    --texto: #F8FAFC;              
+    --texto-secundario: #b0e6c5;   
+    --strong: #A7F3D0;             
+}
+
+body{
+    background-color: var(--fundo);
+}
+
+h1{
+    color: var(--texto);
+}
+
+p{
+    color: var(--texto-secundario);
+    text-align: center;
+}
+
+strong{
+    color: var(--strong);
+}
+
+header{
+    background-image: url("../imgs/terra.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    color: var(--texto);
+    box-shadow: 0 4px 12px rgba(0,0,0,.4);
+    border-radius: 7px;
+    padding: 70px 20px;
+    margin-bottom: 30px;
+}
+
+header h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header h2{
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--texto-secundario);
+    max-width: 700px;
+    margin: 0 auto 15px;
+    line-height: 1.5;
+}
+
+/* GRID DAS CURIOSIDADES */
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    width: 1200px;
+    margin: 30px auto;
+}
+
+main div{
+    font-size: 1.2em;
+
+    background-color: var(--cards);
+    border-radius: 7px;
+    box-shadow: 0 4px 12px var(--borda-card);
+
+    padding: 25px;
+    text-align: center;
+}
+
+main div:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px var(--botoes-hover);
+}
+
+main h2{
+    margin-bottom: 15px;
+}
+
+main p{
+    line-height: 1.6;
+}
