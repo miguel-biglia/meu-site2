@@ -9,7 +9,6 @@
 :root{
     --cabecalho: #081C2E;
     --fundo: #0A1018;
-    --banner: #12263A;
     --cards: #182635;
     --borda-card: #2D4F73;
 
@@ -18,8 +17,79 @@
 
     --texto: #F8FAFC;
     --texto-secundario: #B8C7D9;
+    --strong: #89c0d6;
 }
 
 body{
-    background: var(--fundo);
+    background-color: var(--fundo);
+}
+
+h1{
+    color: var(--texto);
+}
+
+p{
+    color: var(--texto-secundario);
+    text-align: center;
+}
+
+strong{
+    color: var(--strong);
+}
+
+header{
+    background-image:
+        url("../imgs/tecnologia.jpg");
+
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    color: var(--texto);
+    box-shadow: 0 4px 12px rgba(0,0,0,.4);
+    border-radius: 7px;
+    padding: 70px 20px;
+    margin-bottom: 30px;
+}
+
+header h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header h2{
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--texto-secundario);
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+}
+
+div{
+    margin: 25px;
+    text-align: center;
+    background-color: var(--cards);
+    border-radius: 7px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.4);
+    width: 570px;
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr);
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    padding: 25px;
 }
