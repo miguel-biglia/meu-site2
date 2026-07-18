@@ -16,8 +16,8 @@
     --botoes-hover: #70E000;       
 
     --texto: #F8FAFC;              
-    --texto-secundario: #b0e6c5;   
-    --strong: #A7F3D0;             
+    --texto-secundario: #56b97c;   
+    --strong: #8eeec1;             
 }
 
 body{
@@ -58,11 +58,11 @@ header h1{
 }
 
 header h2{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: normal;
     color: var(--texto-secundario);
     max-width: 700px;
-    margin: 0 auto 15px;
+    margin: 0 auto 20px;
     line-height: 1.5;
 }
 
@@ -99,4 +99,9 @@ main h2{
 
 main p{
     line-height: 1.6;
+}
+
+footer{
+    text-align: center;
+    margin: 20px;
 }
