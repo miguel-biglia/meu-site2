@@ -7,17 +7,17 @@
 }
 
 :root{
-    --cabecalho: #0B3D2E;
-    --fundo: #0F1F1A;
-    --cards: #1B3A34;
-    --borda-card: #2E6B5A;
+    --cabecalho: #0B1026;         
+    --fundo: #050816;              
+    --cards: #131B36;             
+    --borda-card: #273469;         
 
-    --botoes: #38B000;
-    --botoes-hover: #70E000;
+    --botoes: #7C3AED;             
+    --botoes-hover: #A855F7;   
 
-    --texto: #F8FAFC;
-    --texto-secundario: #56b97c;
-    --strong: #8eeec1;
+    --texto: #F8FAFC;           
+    --texto-secundario: #B6C2E1;   
+    --strong: #67E8F9;           
 }
 
 body{
@@ -52,7 +52,7 @@ strong{
 }
 
 header{
-    background-image: url("../imgs/terra.jpg");
+    background-image: url("../imgs/espaco.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

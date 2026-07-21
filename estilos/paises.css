@@ -7,17 +7,17 @@
 }
 
 :root{
-    --cabecalho: #0B3D2E;
-    --fundo: #0F1F1A;
-    --cards: #1B3A34;
-    --borda-card: #2E6B5A;
+    --cabecalho: #5A3E2B;        
+    --fundo: #241A14;              
+    --cards: #3A2A20;              
+    --borda-card: #6E4B34;        
 
-    --botoes: #38B000;
-    --botoes-hover: #70E000;
+    --botoes: #D4A017;             
+    --botoes-hover: #E6B800;       
 
-    --texto: #F8FAFC;
-    --texto-secundario: #56b97c;
-    --strong: #8eeec1;
+    --texto: #F8FAFC;              
+    --texto-secundario: #D8C3A5;   
+    --strong: #FFD166;             
 }
 
 body{
@@ -52,7 +52,7 @@ strong{
 }
 
 header{
-    background-image: url("../imgs/terra.jpg");
+    background-image: url("../imgs/paises.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
