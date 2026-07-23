@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --cabecalho:#0F172A;
+    --fundo:#121212;
+    --cards:#1E1E1E;
+    --borda-card:#334155;
+
+    --botoes:#3B82F6;
+    --botoes-hover:#60A5FA;
+
+    --texto:#F8FAFC;
+    --texto-secundario:#CBD5E1;
+    --strong:#7dd4fc8f;
+}
+
+body{
+    background:var(--fundo);
+    color:var(--texto);
+}
+
+/* ANIMAÇÃO */
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(35px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* HEADER */
+
+header{
+    background:var(--cabecalho);
+    text-align:center;
+    padding:60px 20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.4);
+
+    animation:aparecer .8s ease;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+header h2{
+    color:var(--texto-secundario);
+    font-weight:normal;
+    font-size:1.2rem;
+}
+
+/* MAIN */
+
+main{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.card{
+    background:var(--cards);
+    border:1px solid var(--borda-card);
+    border-radius:12px;
+    padding:30px;
+
+    animation:aparecer .8s ease forwards;
+}
+
+.card:nth-child(2){
+    animation-delay:.3s;
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:var(--texto);
+}
+
+.card p{
+    color:var(--texto-secundario);
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+strong{
+    color:var(--strong);
+}
+
+/* VOLTAR */
+
+#voltar{
+    text-align:center;
+    margin:30px;
+    color:var(--texto);
+}
+
+#voltar:hover{
+    text-decoration:underline;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:25px;
+}
+
+footer p{
+    color:var(--texto-secundario);
+}
+
+footer a{
+    color:var(--texto);
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    header{
+        padding:45px 15px;
+    }
+
+    header h1{
+        font-size:2.3rem;
+    }
+
+    header h2{
+        font-size:1rem;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    .card h2{
+        font-size:1.5rem;
+    }
+
+    .card p{
+        font-size:1rem;
+    }
+}
