@@ -121,15 +121,18 @@ main div:hover{
     transform: translateY(-8px);
     box-shadow: 0 0 20px rgba(59,130,246,.4);
 }
+main div button {
+    margin-top: 20px;
+}
 
 #terra {
     max-width: 300px;
-    min-height: 370px;
+    min-height: 340px;
 }
 
 #espaco {
     max-width: 300px;
-    min-height: 380px;
+    min-height: 340px;
 }
 
 main div h1{
