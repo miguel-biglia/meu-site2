@@ -8,11 +8,17 @@
 
 :root{
     --cabecalho: #0F172A;
+
     --fundo: #121212;
+
     --cards: #1E1E1E;
     --borda-card: #334155;
+
     --botoes: #3B82F6;
     --botoes-hover: #60A5FA;
+
+    --strong: #667bf391;
+
     --texto: #F8FAFC;
     --texto-secundario: #CBD5E1;
 }
@@ -41,6 +47,7 @@ body{
    CABEÇALHO
 ======================= */
 
+
 header{
     background: var(--cabecalho);
     text-align: center;
@@ -55,6 +62,10 @@ header h1{
     font-size: 3rem;
     margin-bottom: 10px;
     letter-spacing: 2px;
+}
+
+strong{
+    color: var(--strong);
 }
 
 header h2{
