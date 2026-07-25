@@ -17,6 +17,8 @@
     --botoes: #3B82F6;
     --botoes-hover: #60A5FA;
 
+    --strong: #fff;
+
     --texto: #F8FAFC;
     --texto-secundario: #CBD5E1;
 }
@@ -61,6 +63,8 @@ header h1{
     margin-bottom: 10px;
     letter-spacing: 2px;
 }
+
+
 
 header h2{
     font-size: 1.2rem;
