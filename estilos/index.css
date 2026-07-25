@@ -64,10 +64,6 @@ header h1{
     letter-spacing: 2px;
 }
 
-strong{
-    color: var(--strong);
-}
-
 header h2{
     font-size: 1.2rem;
     font-weight: normal;
